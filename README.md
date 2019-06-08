@@ -207,7 +207,7 @@ When the user taps the button on touch device they cover the button with the fin
 ```css
 button {
   user-select: none;
-  /* we need to remove built in effet */
+  /* we need to remove the built-in effect */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 ```
