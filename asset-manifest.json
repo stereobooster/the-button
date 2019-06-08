@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/the-button/static/css/main.aec8e4df.chunk.css",
+    "main.js": "/the-button/static/js/main.a0fe0dd5.chunk.js",
+    "main.js.map": "/the-button/static/js/main.a0fe0dd5.chunk.js.map",
+    "runtime~main.js": "/the-button/static/js/runtime~main.ad91a980.js",
+    "runtime~main.js.map": "/the-button/static/js/runtime~main.ad91a980.js.map",
+    "static/js/2.8df4384c.chunk.js": "/the-button/static/js/2.8df4384c.chunk.js",
+    "static/js/2.8df4384c.chunk.js.map": "/the-button/static/js/2.8df4384c.chunk.js.map",
+    "index.html": "/the-button/index.html",
+    "precache-manifest.40b7e02e0b2c66094622e69ebb1d943e.js": "/the-button/precache-manifest.40b7e02e0b2c66094622e69ebb1d943e.js",
+    "service-worker.js": "/the-button/service-worker.js",
+    "static/css/main.aec8e4df.chunk.css.map": "/the-button/static/css/main.aec8e4df.chunk.css.map"
+  }
+}
