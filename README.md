@@ -1,6 +1,6 @@
 # The Button
 
-![](/screenshots/preview.png)
+![](/public/preview.png)
 
 ## Use `<button>`
 
