@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #ffc0cb;
+}
+
+.screenshot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 130px;
+}
+
+button,
+input[type="button"] {
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  /* touchscreen */
+  min-width: 1cm;
+  min-height: 1cm;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.button {
+  --color-dark: #333;
+  --color-light: #fff;
+  display: block;
+  position: relative;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  background: var(--color-light);
+  color: var(--color-dark);
+  border: 0.2rem solid var(--color-dark);
+  box-shadow: 0 0.2rem 0 0 var(--color-dark);
+}
+
+.button:active {
+  top: 0.2rem;
+  box-shadow: none;
+}
+
+.button:disabled {
+  --color-dark: #999;
+  cursor: not-allowed;
+  color: transparent;
+  text-shadow: 0 0 0 var(--color-dark);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0.2rem 0 0 var(--color-dark), 0 2px 5px 3px #f0f;
+}
+.button::-moz-focus-inner {
+  border: none;
+}
+
+.button:active:focus {
+  top: 0.2rem;
+  box-shadow: 0 0px 6px 4px #f0f;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  box-shadow: 0 0.2rem 0 0 var(--color-dark);
+}
+.js-focus-visible :active:not(.focus-visible) {
+  top: 0.2rem;
+  box-shadow: none;
+}
+
+.button {
+  overflow: hidden;
+}
+
+/* https://css-tricks.com/touch-devices-not-judged-size/ */
+@media (hover: none) {
+  .button ::after {
+    content: "";
+    display: block;
+    height: 100px;
+    position: absolute;
+    transform: translate3d(-150%, -50px, 0) rotate3d(0, 0, 1, 45deg);
+    width: 200px;
+  }
+
+  .button.active ::after {
+    background-image: linear-gradient(
+      to top,
+      rgba(255, 0, 255, 0.1),
+      rgba(255, 0, 255, 0.9)
+    );
+    transition: all 2.2s cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(120%, -100px, 0) rotate3d(0, 0, 1, 90deg);
+  }
+}
