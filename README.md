@@ -2,6 +2,8 @@
 
 ![](/public/preview.png)
 
+Demo is [here](https://stereobooster.github.io/the-button/).
+
 ## Use `<button>`
 
 Please don't use `<a>` for buttons. They have different meaning and behaviour. Link responses to <kbd>Enter</kbd> key (will trigger onClick action), button reponses to <kbd>Space</kbd>. If user focuses on `<a>`, which is styled as button and uses <kbd>Space</kbd> page will be scrolled instead of action. `<a>` used for navigation, user can <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> click it, to open in new tab. `<a>` is not focusable in Firefox. What I try to say `<a>` and `<button>` has quite big difference in behaviour and semantics.
