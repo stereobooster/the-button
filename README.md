@@ -259,3 +259,7 @@ const Button = ({ children }) => {
 ## PS
 
 I made it with React, but it can be achieved with plain HTML and CSS as well. I hope your main take away will be UX of a button, not the code itself.
+
+## Alternative
+
+https://www.joshwcomeau.com/animation/3d-button/
